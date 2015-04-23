@@ -28,7 +28,7 @@ If you submit a pull request to implement a new feature without going through th
 In short, to get a major feature added to Spree, one must first get the RFC merged into the RFC repo as a markdown file.
 At that point, the RFC is 'active' and may be implemented with the goal of eventual inclusion into Spree.
 
-1. Fork the RFC repo http://github.com/BenMorganIO/spree_rfcs.
+1. Fork the RFC repo http://github.com/spree-contrib/rfcs.
 2. Copy 0000-template.md to active/0000-my-feature.md (where 'my-feature' is descriptive. Do not assign a RFC number yet).
 3. Fill in the RFC.
 4. Submit a pull request.
