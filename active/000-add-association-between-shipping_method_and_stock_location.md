@@ -11,18 +11,18 @@ these three factors:
 - Place delivered to
 - Items delivering
 
-Spree currently considers last two factors but the first factor.
+Spree currently considers last two factors except the first factor.
 This Request for Comments asks about considering where the item is delivered from
 when choosing available shipping methods for an order.
 
 # Motivation
 
-Spree allows us to manage stock locations and they are where the items are
-shipped. However stock locations are not associated with shipping methods
+Spree allows us to manage stock locations and where they are shipped from.
+However stock locations are not associated with shipping methods
 directly at this moment.
 
 For users who have a simple supply chain strategy, it wouldn't matter.
-For examples,
+For example,
 
 - it has only one stock location
 - the stock location is determined by shipping address
@@ -34,14 +34,14 @@ methods.
 
 However the current implementation doesn't work well if you have a bit more
 complicated supply chain strategy.
-For examples,
+For example,
 
 - stocks of an item are distributed to multiple stock locations around the world
 - each stock location supports different shipping methods
 - stock location is determined with various factors such as cost, shipping
   duration, stock, leading time for backorder etc.
 
-To solve these business requirement, Spree needs to know which shipping methods
+To solve these business requirements, Spree needs to know which shipping methods
 are supported by each stock location.
 
 # Detailed Design
